@@ -1,0 +1,12 @@
+
+<div class="abruti">
+  <h1>Add a new cocktail</h1>
+
+<div class="submit-form">
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.association :ingredients %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+
+<div class="abruti">
+  <h1><%= @cocktail.name %></h1>
+
+  <% @doses.each do |dose| %>
+    <div class="dose">
+      <p>Ingredient :<%= dose.ingredient.name %></p>
+      <p>Description :<%= dose.description %></p>
+      <p><%= link_to "Destroy this dose", dose_path(dose), method: :delete, data: {confirm: "Are you sure you want to delete this?"} %></p>
+    </div>
+  <% end %>
+
+  </i><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+  <p><%= link_to "List of cocktails", cocktails_path %></p>
+
+</div>
