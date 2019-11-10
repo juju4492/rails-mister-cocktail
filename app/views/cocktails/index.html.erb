@@ -5,6 +5,7 @@
       <% @cocktails.each do |element| %>
         <div class="cards_abruti">
             <p><%= link_to "#{element.name}", cocktail_path(element) %></p>
+          <!--   <p><%= cl_image_tag element.photo, height: 300, width: 400, crop: :fill %></p> -->
         </div>
       <% end %>
   </div>
