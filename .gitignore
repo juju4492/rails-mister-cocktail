@@ -21,5 +21,6 @@
 /yarn-error.log
 
 /public/assets
+/public/uploads/tmp
 .byebug_history
 .env*
